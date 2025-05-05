@@ -1,0 +1,464 @@
+/* === Global Reset & Layout === */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #39f12f, #1f66c1);
+    color: #e5e7eb;
+    min-height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* === Page Wrapper & Main === */
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 30px 20px;
+  }
+  
+  /* === Header === */
+  header {
+    background: rgba(77, 1, 1, 0.2);
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: fit-content;
+    display: flex;
+    align-items: center;}
+    .header-text {
+         text-align: center; 
+         flex-grow: 1;
+         margin-right: 320px;
+        }
+    
+  
+  /* === Navbar === */
+  .navbar {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* === Cards === */
+  /* .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+  } */
+  
+  /* .card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+  } */
+  
+  /* .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  } */
+  
+  /* === Buttons === */
+  button {
+    padding: 10px 18px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2563eb;
+  }
+  
+  .save-btn {
+    background-color: #10b981;
+  }
+  
+  .save-btn:hover {
+    background-color: #059669;
+  }
+  
+  .cancel-btn {
+    background-color: #ef4444;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #dc2626;
+  }
+  
+ /* === Login / Forms === */
+.login-container,
+.form-container {
+  width: 95%;
+  max-width: 400px;
+  margin: 100px auto;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 253, 253, 0.479);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.login-container input,
+.form-container input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  width: 90%;
+  margin: 12px 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  background: rgba(255, 252, 252, 0.059);
+  color: #ffffff;
+  font-size: 16px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+
+input::placeholder {
+  color: #f0f9ff;
+  opacity: 0.8;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.login-container button,
+.form-container button {
+  width: 100%;
+  margin-top: 15px;
+}
+  
+  /* === List Container / Tables === */
+  .list-container {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 1000px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .list-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .list-container th,
+  .list-container td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .list-container th {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+  }
+  
+  /* === Agent Panel Quick Links === */
+  .agent-home {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* .card-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  } */
+  
+  /* .card-link {
+    background: #4bff37;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  } */
+  
+  /* .card-link:hover {
+    background: #2563eb;
+  } */
+  
+  /* === Footer === */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: auto;
+    backdrop-filter: blur(10px);
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Dashboard Cards (Glassmorphism) === */
+  /* .dashboard-header {
+    background: transparent;
+    text-align: center;
+    padding: 30px 10px 10px;
+    font-size: 2.5rem;
+    color: #ffffff;
+  } */
+  
+  .dashboard-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .welcome-text {
+    font-size: 1.2rem;
+    color: #f0f9ff;
+  }
+  
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .dashboard-card,
+  .glass-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(24, 34, 56, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 30px 20px;
+    color: #dbeafe;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .dashboard-card:hover,
+  .glass-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* === Responsive Adjustments === */
+  @media (max-width: 1000px) {
+    .nav-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 5px;
+    }
+  
+    .nav-link {
+      font-size: 15px;
+      padding: 6px 10px;
+    }
+  
+    .cards,
+    .card-links {
+      flex-direction: column;
+    }
+  
+    .form-container,
+    .list-container,
+    .login-container {
+      width: 95%;
+      margin: 20px auto;
+    }
+  
+    .card-link {
+      width: 90%;
+      text-align: center;
+    }
+  
+    table,
+    th,
+    td {
+      font-size: 14px;
+    }
+  
+    header {
+      font-size: 0.7rem;
+      padding: 20px 10px;
+    }
+    .header-text {
+        text-align: center; /*Centers the text */
+        flex-grow: 1;/*Allows the text to occupy the remaining space */
+        margin-right: 0px;
+       }
+  }
+  
+  /* === Dark Mode Styles === */
+body.dark-mode {
+    background: #0e172c;
+    color: #f1f5f9;
+  }
+  
+  body.dark-mode .navbar,
+  body.dark-mode .footer,
+  body.dark-mode .dashboard-card,
+  body.dark-mode .login-container,
+  body.dark-mode .form-container,
+  body.dark-mode .list-container {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+  }
+  
+  /* === Toggle Button === */
+  .dark-toggle-btn {
+    background: #1f2937;
+    color: #f1f5f9;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .dark-toggle-btn:hover {
+    background: #374151;
+  }
+  
+  
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 100%;
+    padding: 5px 15px;
+    margin-right: auto; /* Pushes the logo to the left */
+}
+
+.logo {
+    height: 140px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 600px) {
+    .logo {
+        height: 45px;
+    }
+
+    .logo-text {
+        font-size: 1.4rem;
+    }
+    
+}
+  
+  

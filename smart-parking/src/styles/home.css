@@ -1,0 +1,20 @@
+nav{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    border-bottom: #ffffff 2px solid;
+}
+ul{
+    margin-left: 50px;
+    display: flex;
+justify-content: end;
+margin-right: 170px;
+}
+li{
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
